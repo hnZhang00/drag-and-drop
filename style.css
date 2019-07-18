@@ -17,3 +17,11 @@
   background: red;
   border-bottom: 1px solid black;
 }
+
+.column.start {
+  opacity: 0.5;
+}
+
+.column.over {
+  border: 3px dashed #000;
+}
