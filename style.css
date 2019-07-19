@@ -1,27 +1,46 @@
 
-.column {
-  height: 200px;
-  width: 200px;
-  float: left;
-  border: 2px solid black;
-  background-color: green;
-  margin-right: 5px;
-  text-align: center;
-  cursor: move;
-}
-.column header {
-  color: black;
-  text-shadow: #000 0 1px;
-  box-shadow: 5px;
-  padding: 5px;
-  background: red;
-  border-bottom: 1px solid black;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-.column.start {
-  opacity: 0.5;
-}
+  .dragview_wrap {
+    width: 400px;
+    height: 300px;
+    background: #ccc;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 99999;
+  }
 
-.column.over {
-  border: 3px dashed #000;
-}
+  .dragview_area {
+    width: 100%;
+    height: 30px;
+    background: blue;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .dragview_move {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background-color: #fff;
+    z-index: 100000;
+    cursor: move;
+  }
+
+  .dragview_dummy_wrap {
+    border: 2px solid #000
+  }
+
+  .dragview_dummy_wrap2 {
+    border: 2px solid red
+  }
