@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Drag</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <div id="drag_wrap" class="dragview_wrap">
+    <div class="dragview_area" id="drag_area">可拖动区域</div>
+  </div>
+  <script src="./index.js"></script>
+  <script>
+  new DragView({
+    "dragWrap": document.getElementById("drag_wrap"), //容器，必选
+    "dragableArea": document.getElementById("drag_area"), //可拖拽区域，可选
+    "isDrag": true, //是否可拖拽，可选
+    "isDummyWrap": false, //是否需要虚拟拖拽框，可选
+    "dummyWrapClass": "dragview_dummy_wrap2" //控制虚拟拖拽框的样式，可选
+  })
+  </script>
+</body>
+
+</html>
